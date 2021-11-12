@@ -63,82 +63,14 @@
         android:text="CATEGORIES"
         android:fontFamily="@font/roboto_black"
         />
-    <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/arts_and_entertainment"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/categories1"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcView"
         android:layout_marginTop="16dp"
-        android:text="Arts and Entertainment"
-        android:fontFamily="@font/roboto_bold"
-        android:textColor="#000000"
-        android:textSize="20dp"
-        android:drawableStart="@drawable/orange_brush"
-        android:paddingHorizontal="16dp"
-        android:paddingVertical="8dp"
-        android:drawablePadding="8dp"
-        android:background="@color/white"
-        />
-    <com.google.android.material.chip.ChipGroup
-        android:id="@+id/chipGroup1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="16dp"
-        app:layout_constraintTop_toBottomOf="@+id/arts_and_entertainment"
-        >
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rcView1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            tools:listitem="@layout/single_chip_layout"
-            />
-    </com.google.android.material.chip.ChipGroup>
-
-    <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/automotive"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/chipGroup1"
-        android:layout_marginTop="16dp"
-        android:text="Automotive"
-        android:fontFamily="@font/roboto_bold"
-        android:textColor="#000000"
-        android:textSize="20dp"
-        android:drawableStart="@drawable/car_blue"
-        android:paddingHorizontal="16dp"
-        android:paddingVertical="8dp"
-        android:drawablePadding="8dp"
-        android:background="@color/white"
-        />
-    <com.google.android.material.chip.ChipGroup
-        android:id="@+id/chipGroup2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="16dp"
-        app:layout_constraintTop_toBottomOf="@+id/automotive"
-        >
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rcView2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            tools:listitem="@layout/single_chip_layout"
-            />
-    </com.google.android.material.chip.ChipGroup>
-    <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/community_and_government"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/chipGroup2"
-        android:layout_marginTop="16dp"
-        android:text="Community &amp; Government"
-        android:fontFamily="@font/roboto_bold"
-        android:textColor="#000000"
-        android:textSize="20dp"
-        android:drawableStart="@drawable/bank_pink"
-        android:paddingHorizontal="16dp"
-        android:paddingVertical="8dp"
-        android:drawablePadding="8dp"
-        android:background="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/categories1"
+        tools:listitem="@layout/recycler_view_item"
         />
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/cancel_button"
@@ -148,7 +80,7 @@
             app:layout_constraintEnd_toStartOf="@+id/apply_button"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/community_and_government" />
+            app:layout_constraintTop_toBottomOf="@+id/rcView" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/apply_button"
