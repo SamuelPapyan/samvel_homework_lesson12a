@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">samvel_homework_lesson_12a</string>
+    <string-array name="bank">
+        <item>Բանկ</item>
+    </string-array>
+    <string-array name="kanxik">
+        <item>Կանխիք</item>
+    </string-array>
+    <string-array name="artsakhbank">
+        <item>Արցախբանկ</item>
+    </string-array>
+    <string-array name="amount_from">
+        <item>USD</item>
+    </string-array>
+    <string-array name="amount_to">
+        <item>AMD</item>
+    </string-array>
 </resources>

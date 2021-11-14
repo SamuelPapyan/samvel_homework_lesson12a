@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:name=".Fragment2">
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/bank_spinner"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:entries="@array/bank"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/cash_spinner"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:entries="@array/kanxik"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintBottom_toBottomOf="@id/bank_spinner"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/artsakh_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:entries="@array/artsakhbank"
+        android:paddingStart="60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintTop_toBottomOf="@id/cash_spinner"
+        />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/android_head_green"
+        app:layout_constraintStart_toStartOf="@id/artsakh_spinner"
+        app:layout_constraintTop_toTopOf="@id/artsakh_spinner"/>
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/usd"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:paddingStart="60dp"
+        android:entries="@array/amount_from"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/artsakh_spinner"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:src="@drawable/android_head_green"
+        app:layout_constraintStart_toStartOf="@id/usd"
+        app:layout_constraintTop_toTopOf="@id/usd"/>
+
+
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/amd"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:paddingStart="60dp"
+        android:paddingEnd="10dp"
+        android:entries="@array/amount_to"
+
+        app:layout_constraintTop_toBottomOf="@id/artsakh_spinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+
+        />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/android_head_green"
+        app:layout_constraintStart_toStartOf="@id/amd"
+        app:layout_constraintTop_toTopOf="@id/amd"
+        />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/editText1"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:hint="ունեմ"
+        app:layout_constraintStart_toStartOf="@id/usd"
+        app:layout_constraintTop_toBottomOf="@id/usd"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/editText2"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginEnd="16dp"
+        android:hint="ցանկանումեմ"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/editText1"
+        app:layout_constraintBottom_toBottomOf="@id/editText1"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
