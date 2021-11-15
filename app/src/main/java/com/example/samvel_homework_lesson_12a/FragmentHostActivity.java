@@ -10,15 +10,22 @@ import androidx.fragment.app.FragmentTransaction;
 public class FragmentHostActivity extends AppCompatActivity {
     private AppCompatButton button1;
     private AppCompatButton button2;
+    private AppCompatButton button3;
     private FragmentTransaction ft;
+
     protected void onCreate(@Nullable Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.fragment_layout_1);
+
         Fragment1 firstFragment = new Fragment1();
         Fragment2 secondFragment = new Fragment2();
+        Fragment3 thirdFragment = new Fragment3();
+
         ft = getSupportFragmentManager().beginTransaction();
+
         button1 = findViewById(R.id.button_1);
         button2 = findViewById(R.id.button_2);
+        button3 = findViewById(R.id.button_3);
 
         button1.setOnClickListener(v->{
             ft.replace(R.id.fragment_switcher, firstFragment);
@@ -28,6 +35,12 @@ public class FragmentHostActivity extends AppCompatActivity {
 
         button2.setOnClickListener(v->{
             ft.replace(R.id.fragment_switcher, secondFragment);
+            ft.commit();
+            ft.addToBackStack(null);
+        });
+
+        button3.setOnClickListener(v->{
+            ft.replace(R.id.fragment_switcher, thirdFragment);
             ft.commit();
             ft.addToBackStack(null);
         });
