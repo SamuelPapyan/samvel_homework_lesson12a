@@ -1,5 +1,27 @@
 <resources>
     <string name="app_name">samvel_homework_lesson_12a</string>
+    <string name="sorting1">SORTING</string>
+    <string name="sorting2">Sorting</string>
+    <string name="newest1">Newest</string>
+    <string name="categories1">CATEGORIES</string>
+    <string name="apply1">APPLY</string>
+    <string name="arts_and_entertainment">Arts and Entertainment</string>
+    <string name="cancel1">CANCEL</string>
+    <string name="Fragment_1">Fragment 1</string>
+    <string name="Fragment_2">Fragment 2</string>
+    <string name="Fragment_3">Fragment 3</string>
+    <string name="Accepted_tests">Accepted tests</string>
+    <string name="show_all_6">Show all (6)</string>
+    <string name="new_cooments">New Comments</string>
+    <string name="ունեմ">ունեմ</string>
+    <string name="ցանկանումեմ">ցանկանում եմ</string>
+    <string name="third_fragment">This is the third fragment</string>
+    <string name="CooperKo">CooperKo</string>
+    <string name="advanced_ticketing">Advenced Ticketing</string>
+    <string name="coverage">Coverage | Ends In</string>
+    <string name="bug_comment">Bug Comment</string>
+    <string name="test_io_update">test IO update:</string>
+    <string name="only_product">#29 | Only Product</string>
     <string-array name="bank">
         <item>Բանկ</item>
     </string-array>

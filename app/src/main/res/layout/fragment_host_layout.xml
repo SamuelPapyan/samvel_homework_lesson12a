@@ -10,9 +10,9 @@
         android:id="@+id/button_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Fragment 1"
-        android:layout_marginStart="16dp"
-        android:layout_marginBottom="16dp"
+        android:text="@string/Fragment_1"
+        android:layout_marginStart="@dimen/_16dp"
+        android:layout_marginBottom="@dimen/_16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -20,7 +20,7 @@
         android:id="@+id/button_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Fragment 2"
+        android:text="@string/Fragment_2"
         app:layout_constraintBottom_toBottomOf="@+id/button_1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/button_1" />
@@ -28,15 +28,15 @@
         android:id="@+id/button_3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Fragment 3"
+        android:text="@string/Fragment_3"
         app:layout_constraintBottom_toBottomOf="@+id/button_1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/button_2" />
 
-    <fragment
+    <androidx.fragment.app.FragmentContainerView
         android:id="@+id/fragment_switcher"
         android:layout_width="match_parent"
-        android:layout_height="650dp"
+        android:layout_height="@dimen/_650dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
