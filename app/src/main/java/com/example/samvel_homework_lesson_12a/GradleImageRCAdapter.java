@@ -11,7 +11,9 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 
 public class GradleImageRCAdapter extends RecyclerView.Adapter<GradleImageRCAdapter.GradleImageViewHolder>{
-    GetActivity getActivityInstance = null;
+
+    ImageClick imageClick = null;
+
     String[] imageUrls = {
         "https://img.freepik.com/free-photo/this-is-beautiful-landscape-emerald-lake-canada-s-youhe-national-park_361746-26.jpg?size=626&ext=jpg",
             "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Beautiful-landscape.png/800px-Beautiful-landscape.png",
@@ -41,6 +43,10 @@ public class GradleImageRCAdapter extends RecyclerView.Adapter<GradleImageRCAdap
         return imageUrls.length;
     }
 
+    public void setImageClick(ImageClick imageClick) {
+        this.imageClick = imageClick;
+    }
+
     class GradleImageViewHolder extends RecyclerView.ViewHolder{
 
         public GradleImageViewHolder(@NonNull View itemView) {
@@ -48,14 +54,16 @@ public class GradleImageRCAdapter extends RecyclerView.Adapter<GradleImageRCAdap
         }
         void initData(String src){
             AppCompatImageView image = itemView.findViewById(R.id.some_image);
-            if(getActivityInstance != null){
-                Glide.with(getActivityInstance.getActivity())
-                        .load(src)
-                        .into(image);
-            }
+            Glide.with(itemView)
+                    .load(src)
+                    .centerCrop()
+                    .into(image);
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    imageClick.onImageClick(src);
+                }
+            });
         }
-    }
-    public void setGetActivityInstance(GetActivity getActivityInstance){
-        this.getActivityInstance = getActivityInstance;
     }
 }

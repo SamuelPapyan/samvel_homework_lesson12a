@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -16,13 +17,21 @@ public class Lesson17GalleryFragment extends Fragment {
         RecyclerView rcView = view.findViewById(R.id.imagesRCView);
         GradleImageRCAdapter rcAdapter = new GradleImageRCAdapter();
         GridLayoutManager glm = new GridLayoutManager(getContext(),3, LinearLayoutManager.VERTICAL,false);
-        rcAdapter.setGetActivityInstance(new GetActivity() {
+        rcView.setLayoutManager(glm);
+        rcAdapter.setImageClick(new ImageClick() {
             @Override
-            public Lesson17GalleryActivity getActivity() {
-                return getActivity();
+            public void onImageClick(String src) {
+                SingleImageFragment secondFragment = new SingleImageFragment();
+                Bundle args = new Bundle();
+                args.putString("imageSrc",src);
+                secondFragment.setArguments(args);
+                Lesson17GalleryActivity activity = (Lesson17GalleryActivity)getActivity();
+                FragmentTransaction ft = activity.getSupportFragmentManager().beginTransaction();
+                ft.replace(R.id.lesson17fragment,secondFragment);
+                ft.addToBackStack(null);
+                ft.commit();
             }
         });
-        rcView.setLayoutManager(glm);
         rcView.setAdapter(rcAdapter);
         return view;
     }
