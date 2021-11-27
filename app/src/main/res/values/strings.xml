@@ -26,6 +26,10 @@
     <string name="send">Send</string>
     <string name="type_hint">Type something to send.</string>
     <string name="location">Location</string>
+    <string name="type_something_here">Type something here</string>
+    <string name="your_message_is">Your Message Is</string>
+    <string name="gallery">Gallery</string>
+    <string name="send_message">Send Message</string>
     <string-array name="bank">
         <item>Բանկ</item>
     </string-array>
