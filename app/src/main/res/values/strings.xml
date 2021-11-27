@@ -30,6 +30,13 @@
     <string name="your_message_is">Your Message Is</string>
     <string name="gallery">Gallery</string>
     <string name="send_message">Send Message</string>
+    <string name="gallery_2">Gallery 2</string>
+    <string name="profile">Profile</string>
+    <string name="posts">POSTS</string>
+    <string name="followers">FOLLOWERS</string>
+    <string name="_200">200</string>
+    <string name="name_surname">Name Surname</string>
+    <string name="_49">49</string>
     <string-array name="bank">
         <item>Բանկ</item>
     </string-array>

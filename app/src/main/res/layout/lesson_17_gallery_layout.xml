@@ -27,4 +27,12 @@
         android:layout_marginStart="16dp"
         android:text="@string/send_message"
         app:layout_constraintTop_toTopOf="@id/galleryButton"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/gallery_2_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/sendMessageFragmentButton"
+        android:layout_marginStart="16dp"
+        android:text="@string/gallery_2"
+        app:layout_constraintTop_toTopOf="@id/galleryButton"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
