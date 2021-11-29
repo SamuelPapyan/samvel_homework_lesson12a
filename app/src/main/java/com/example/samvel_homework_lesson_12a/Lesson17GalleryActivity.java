@@ -17,6 +17,7 @@ public class Lesson17GalleryActivity extends AppCompatActivity {
         Lesson17GalleryFragment fragment = new Lesson17GalleryFragment();
         Lesson18Fragment1 fragment2 = new Lesson18Fragment1();
         Gallery2Fragment fragment3 = new Gallery2Fragment();
+        Lesson21Fragment fragment4 = new Lesson21Fragment();
 
         //Fragment Manager with transaction
         FragmentManager fragmentManager = getSupportFragmentManager();
@@ -31,6 +32,7 @@ public class Lesson17GalleryActivity extends AppCompatActivity {
         AppCompatButton galleryButton = findViewById(R.id.galleryButton);
         AppCompatButton sendMessageButton = findViewById(R.id.sendMessageFragmentButton);
         AppCompatButton gallery2Button = findViewById(R.id.gallery_2_button);
+        AppCompatButton ringtoneButton = findViewById(R.id.ringtone_button);
 
         //Null check with onclick Listeners
         if(galleryButton != null){
@@ -53,6 +55,14 @@ public class Lesson17GalleryActivity extends AppCompatActivity {
             gallery2Button.setOnClickListener(v->{
                 FragmentTransaction ft = fragmentManager.beginTransaction();
                 ft.replace(R.id.lesson17fragment,fragment3);
+                ft.addToBackStack(null);
+                ft.commit();
+            });
+        }
+        if(ringtoneButton != null){
+            ringtoneButton.setOnClickListener(v->{
+                FragmentTransaction ft = fragmentManager.beginTransaction();
+                ft.replace(R.id.lesson17fragment,fragment4);
                 ft.addToBackStack(null);
                 ft.commit();
             });
