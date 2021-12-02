@@ -41,6 +41,7 @@
     <string name="stop_service">Stop Service</string>
     <string name="ringtone">Ringtone</string>
     <string name="viewpager2">ViewPager2</string>
+    <string name="bound_service_binder">Bound Service Binder</string>
     <string-array name="bank">
         <item>Բանկ</item>
     </string-array>
