@@ -42,6 +42,16 @@
     <string name="ringtone">Ringtone</string>
     <string name="viewpager2">ViewPager2</string>
     <string name="bound_service_binder">Bound Service Binder</string>
+    <string name="filters">Filters</string>
+    <string name="reset_all">Reset All</string>
+    <string name="sort_by">Sort By</string>
+    <string name="date_newest_first">Date (newest first)</string>
+    <string name="date_oldest_first">Date (oldest first)</string>
+    <string name="task_type">Task type</string>
+    <string name="buf_fix_confirmations">Bug Fix Confirmations</string>
+    <string name="bug_reproductions">Bug Reproductions</string>
+    <string name="apply_filters">Apply Filters</string>
+    <string name="dialog">Dialog</string>
     <string-array name="bank">
         <item>Բանկ</item>
     </string-array>

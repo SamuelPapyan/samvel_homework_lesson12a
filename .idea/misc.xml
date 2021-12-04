@@ -5,12 +5,15 @@
       <map>
         <entry key="..\:/Users/UserPC/AndroidStudioProjects/samvel_homework_lesson_12a/app/src/main/res/drawable/car_blue.xml" value="0.21614583333333334" />
         <entry key="..\:/Users/UserPC/AndroidStudioProjects/samvel_homework_lesson_12a/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/UserPC/AndroidStudioProjects/samvel_homework_lesson_12a/app/src/main/res/layout/dialog_fragment_layout.xml" value="0.22" />
         <entry key="..\:/Users/UserPC/AndroidStudioProjects/samvel_homework_lesson_12a/app/src/main/res/layout/fragment_host_layout.xml" value="0.2" />
         <entry key="..\:/Users/UserPC/AndroidStudioProjects/samvel_homework_lesson_12a/app/src/main/res/layout/fragment_layout_1.xml" value="0.2" />
         <entry key="..\:/Users/UserPC/AndroidStudioProjects/samvel_homework_lesson_12a/app/src/main/res/layout/fragment_layout_2.xml" value="0.2078125" />
         <entry key="..\:/Users/UserPC/AndroidStudioProjects/samvel_homework_lesson_12a/app/src/main/res/layout/fragment_layout_3.xml" value="0.1953125" />
         <entry key="..\:/Users/UserPC/AndroidStudioProjects/samvel_homework_lesson_12a/app/src/main/res/layout/fragment_layout_4.xml" value="0.2" />
         <entry key="..\:/Users/UserPC/AndroidStudioProjects/samvel_homework_lesson_12a/app/src/main/res/layout/gallery_list_2_item.xml" value="0.2" />
+        <entry key="..\:/Users/UserPC/AndroidStudioProjects/samvel_homework_lesson_12a/app/src/main/res/layout/gallery_page_1_layout.xml" value="0.2" />
+        <entry key="..\:/Users/UserPC/AndroidStudioProjects/samvel_homework_lesson_12a/app/src/main/res/layout/gallery_page_2_layout.xml" value="0.2" />
         <entry key="..\:/Users/UserPC/AndroidStudioProjects/samvel_homework_lesson_12a/app/src/main/res/layout/image_single_fragment_layout.xml" value="0.2" />
         <entry key="..\:/Users/UserPC/AndroidStudioProjects/samvel_homework_lesson_12a/app/src/main/res/layout/lesson18_edit_text_layout.xml" value="0.22" />
         <entry key="..\:/Users/UserPC/AndroidStudioProjects/samvel_homework_lesson_12a/app/src/main/res/layout/lesson18_share_preference_result_layout.xml" value="0.2" />
@@ -20,7 +23,11 @@
         <entry key="..\:/Users/UserPC/AndroidStudioProjects/samvel_homework_lesson_12a/app/src/main/res/layout/lesson_20_gallery.xml" value="0.2" />
         <entry key="..\:/Users/UserPC/AndroidStudioProjects/samvel_homework_lesson_12a/app/src/main/res/layout/lesson_21_service_layout.xml" value="0.10677083333333333" />
         <entry key="..\:/Users/UserPC/AndroidStudioProjects/samvel_homework_lesson_12a/app/src/main/res/layout/lesson_22_activity_1_layout.xml" value="0.2" />
+        <entry key="..\:/Users/UserPC/AndroidStudioProjects/samvel_homework_lesson_12a/app/src/main/res/layout/lesson_22_bound_activity_layout.xml" value="0.2" />
         <entry key="..\:/Users/UserPC/AndroidStudioProjects/samvel_homework_lesson_12a/app/src/main/res/layout/lesson_22_viewpager_item_layout.xml" value="0.2" />
+        <entry key="..\:/Users/UserPC/AndroidStudioProjects/samvel_homework_lesson_12a/app/src/main/res/layout/lesson_23_layout.xml" value="0.2" />
+        <entry key="..\:/Users/UserPC/AndroidStudioProjects/samvel_homework_lesson_12a/app/src/main/res/layout/lesson_23_page_1.xml" value="0.2" />
+        <entry key="..\:/Users/UserPC/AndroidStudioProjects/samvel_homework_lesson_12a/app/src/main/res/layout/lesson_23_page_2.xml" value="0.2" />
         <entry key="..\:/Users/UserPC/AndroidStudioProjects/samvel_homework_lesson_12a/app/src/main/res/layout/recycler_view_item.xml" value="0.2" />
         <entry key="..\:/Users/UserPC/AndroidStudioProjects/samvel_homework_lesson_12a/app/src/main/res/layout/recycler_view_item_1.xml" value="0.25" />
         <entry key="..\:/Users/UserPC/AndroidStudioProjects/samvel_homework_lesson_12a/app/src/main/res/layout/recycler_view_item_2.xml" value="0.5" />
