@@ -26,12 +26,6 @@ public class GalleryFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState)   {
         View view = inflater.inflate(R.layout.lesson_23_page_1, container, false);
-        AppCompatImageView profileImage = view.findViewById(R.id.profileImage);
-        Glide.with(view.getContext())
-                .load("https://img.freepik.com/free-photo/this-is-beautiful-landscape-emerald-lake-canada-s-youhe-national-park_361746-26.jpg?size=626&ext=jpg")
-                .centerCrop()
-                .circleCrop()
-                .into(profileImage);
         return view;
     }
 
