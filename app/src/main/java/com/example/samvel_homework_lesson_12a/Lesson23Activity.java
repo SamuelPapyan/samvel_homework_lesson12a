@@ -21,6 +21,8 @@ public class Lesson23Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.lesson_23_layout);
         dialogButton = findViewById(R.id.dialog_button);
+        profilePhoto = findViewById(R.id.profileImage);
+
         FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
         ft.replace(R.id.otherFragmentContainer, fragment1);
         ft.addToBackStack(null);
