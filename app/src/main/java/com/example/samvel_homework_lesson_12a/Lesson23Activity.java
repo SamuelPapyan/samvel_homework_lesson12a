@@ -11,11 +11,12 @@ import androidx.fragment.app.FragmentTransaction;
 public class Lesson23Activity extends AppCompatActivity {
     GalleryFragment fragment1 = new GalleryFragment();
     MyDialogFragment dialogFragment = new MyDialogFragment();
-    AppCompatButton dialogButton = findViewById(R.id.dialog_button);
+    AppCompatButton dialogButton;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.lesson_23_layout);
+        dialogButton = findViewById(R.id.dialog_button);
         FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
         ft.replace(R.id.otherFragmentContainer, fragment1);
         ft.addToBackStack(null);
