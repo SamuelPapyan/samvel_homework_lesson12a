@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Samvel_homework_lesson_12a">
         <activity
-            android:name=".Lesson23Activity"
+            android:name=".pictrix.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
